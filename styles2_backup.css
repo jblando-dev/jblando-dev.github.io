@@ -1,0 +1,28 @@
+/* PANEL VISIBILITY CONTROL */
+.panel {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Show target panel */
+.panel:target {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Default panel (About Me) */
+.panel.default {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide default when another panel is targeted */
+:target ~ .default {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+}

@@ -1,167 +1,28 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #f5f7fa;
-  color: #1f2933;
-}
-
-.page {
-  display: flex;
-  min-height: 100vh;
-}
-
-/* LEFT SIDEBAR */
-.sidebar {
-  width: 260px;
-  background: #0f172a;
-  color: #e5e7eb;
-  padding: 30px 20px;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-}
-
-.sidebar h1 {
-  font-size: 1.3em;
-  margin-bottom: 5px;
-}
-
-.sidebar-role {
-  font-size: 0.9em;
-  color: #9ca3af;
-  margin-bottom: 30px;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 15px;
-}
-
-.sidebar a {
-  color: #e5e7eb;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.sidebar a:hover {
-  color: #93c5fd;
-}
-
-/* MAIN CONTENT */
-.content {
-  flex: 1;
-  padding: 50px 60px;
-  background: #ffffff;
-}
-
-section {
-  margin-bottom: 60px;
-}
-
-h2 {
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 6px;
-  margin-bottom: 20px;
-}
-
-.two-column {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 12px 30px;
-  list-style: square;
-  padding-left: 20px;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skills span {
-  background: #f0f4f8;
-  border: 1px solid #dde3ea;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.9em;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.85em;
-  color: #6b7280;
-  margin-top: 80px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .page {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  .content {
-    padding: 30px;
-  }
-}
-
-
-.brand {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-
-.brand img {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #334155;
-}
-/* PANELS */
+/* PANEL VISIBILITY CONTROL */
 .panel {
+  display: none;
   opacity: 0;
   transform: translateY(20px);
-  pointer-events: none;
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
+/* Show target panel */
 .panel:target {
+  display: block;
   opacity: 1;
   transform: translateY(0);
-  pointer-events: auto;
 }
 
-/* RESUME VIEWER */
-.resume-container {
-  margin-top: 20px;
+/* Default panel (About Me) */
+.panel.default {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.resume-container iframe {
-  width: 100%;
-  height: 80vh;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
+/* Hide default when another panel is targeted */
+:target ~ .default {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
 }
-
-/* DOWNLOAD LINK */
-.resume-download {
-  margin-top: 12px;
-  font-size: 0.9em;
-}
-
