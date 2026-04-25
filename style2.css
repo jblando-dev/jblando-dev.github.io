@@ -178,6 +178,18 @@ section h2 {
     position: relative;
   }
 
+.sidebar a {
+  display: block;
+  padding-left: 10px;
+  border-left: 3px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.sidebar a:hover {
+  color: #93c5fd;
+  border-left-color: #334155;
+}
+
   .content {
     padding: 30px;
   }
