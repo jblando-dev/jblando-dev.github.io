@@ -167,10 +167,9 @@ section h2 {
 }
 
 /* MOBILE */
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
   .page {
-    flex-direction: column;
-  }
+    */
 
   .sidebar {
     width: 100%;
@@ -192,5 +191,20 @@ section h2 {
 
   .content {
     padding: 30px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .hero-card {
+    padding: 24px;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    padding: 28px;
   }
 }
