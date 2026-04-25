@@ -73,11 +73,24 @@ body {
 
 
 /* MAIN CONTENT */
+
 .content {
   flex: 1;
-  padding: 50px 60px;
+  padding: 56px 68px;   /* slightly more breathing room */
   background: #ffffff;
 }
+
+
+section {
+  margin-bottom: 56px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 1.35rem;
+  color: #0f172a;
+}
+
 
 /* PANELS */
 /*.panel {
