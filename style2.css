@@ -172,7 +172,9 @@ section h2 {
 /* MOBILE */
 /*@media (max-width: 900px) {
   .page {*/
-
+.contact-intro {
+  margin-bottom: 20px;
+  color: #475
 @media (max-width: 900px) {
   .hero-card {
     padding: 24px;
