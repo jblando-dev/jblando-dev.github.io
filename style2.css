@@ -65,7 +65,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;   /* a bit more space below */
+  margin-bottom: 10px;   /* a bit more space below changed from 20 to 10*/
 }
 
 
