@@ -167,22 +167,10 @@ section h2 {
 }
 
 /* MOBILE */
-/*@media (max-width: 900px) {
-  .page {
-    */
 @media (max-width: 900px) {
-  .hero-card {
-    padding: 24px;
-  }
+  .page {
 
-  .hero-title {
-    font-size: 1.5rem;
-  }
 
-  .content {
-    padding: 28px;
-  }
-}
   .sidebar {
     width: 100%;
     height: auto;
