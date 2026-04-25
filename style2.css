@@ -28,12 +28,19 @@ body {
   height: 100vh;
 }
 
-.sidebar-role {
+/*.sidebar-role {
   font-size: 0.9em;
   color: #9ca3af;
   margin-bottom: 30px;
-}
+}OLD*/
 
+.sidebar-role {
+  font-size: 1.1rem;      /* bigger and more present */
+  font-weight: 500;       /* slightly stronger */
+  color: #e5e7eb;         /* brighter for contrast */
+  text-align: center;     /* aligns with the centered logo */
+  margin-bottom: 30px;
+}
 .sidebar ul {
   list-style: none;
   padding: 0;
