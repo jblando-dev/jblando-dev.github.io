@@ -120,6 +120,36 @@ body {
   transform: translateY(20px);
 }
 
+.hero-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 5px solid #2563eb; /* accent */
+  padding: 28px 32px;
+  margin-bottom: 45px;
+}
+
+.hero-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.hero-title {
+  font-size: 1.75rem;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #334155;
+  margin: 0;
+}
+
 /* MOBILE */
 @media (max-width: 900px) {
   .page {
