@@ -165,11 +165,23 @@ section h2 {
   color: #334155;
   margin: 0;
 }
-
+.resume-intro {
+  margin-bottom: 16px;
+  color: #475569;
+  font-size: 0.95
 /* MOBILE */
-@media (max-width: 900px) {
-  .page {
+/*@media (max-width: 900px) {
+  .page {*/
 
+@media (max-width: 900px) {
+  .hero-card {
+    padding: 24px;
+  }
+
+  .content {
+    padding: 28px;
+  }
+}
 
   .sidebar {
     width: 100%;
